@@ -223,7 +223,7 @@ if ( ! function_exists( 'wp_install_defaults' ) ) :
 		} else {
 			$first_post = "<!-- wp:paragraph -->\n<p>" .
 			/* translators: First post content. %s: Site link. */
-			__( 'Welcome to WordPress. This is your first post. Edit or delete it, then start writing!' ) .
+			__( 'dasdasdasdWelcome to WordPress. This is your first post. Edit or delete it, then start writing!' ) .
 			"</p>\n<!-- /wp:paragraph -->";
 		}
 
@@ -340,7 +340,7 @@ Commenter avatars come from <a href="%s">Gravatar</a>.'
 				'post_content'          => $first_page,
 				'post_excerpt'          => '',
 				'comment_status'        => 'closed',
-				'post_title'            => __( 'Sample Page' ),
+				'post_title'            => __( 'Sample Page3' ),
 				/* translators: Default page slug. */
 				'post_name'             => __( 'sample-page' ),
 				'post_modified'         => $now,

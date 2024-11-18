@@ -6,12 +6,11 @@ services:
     container_name: banco-teste-deploy
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: ellecj      # Mesmo nome do banco no wp-config.php
-      MYSQL_USER: ellecj          # Mesmo usuário do banco no wp-config.php
-      MYSQL_PASSWORD: 'c6XBnshOfrUAe?a_'  # Mesmo password do banco no wp-config.php
+      MYSQL_DATABASE: ellecj
+      MYSQL_USER: ellecj
+      MYSQL_PASSWORD: 'c6XBnshOfrUAe?a_'
     volumes:
       - db_data:/var/lib/mysql
-      - ./deploy-scripts:/var/www/html/deploy-scripts  # Para os scripts de deploy
     networks:
       - wordpress_net
 
@@ -29,7 +28,7 @@ services:
       WORDPRESS_DB_NAME: ellecj
     volumes:
       - ./wp-content:/var/www/html/wp-content      # wp-content mapeado corretamente
-      - .:/var/www/html                            # Diretório atual mapeado corretamente para /var/www/html
+      - .:/var/www/html                            # Diretório atual mapeado corretamente
     networks:
       - wordpress_net
 

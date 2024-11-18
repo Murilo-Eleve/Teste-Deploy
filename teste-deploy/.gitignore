@@ -1,0 +1,21 @@
+# Ignorar diretórios de configuração do Docker
+db_data/
+wp-content/uploads/
+
+# Ignorar arquivos de configuração do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos do Composer
+/vendor/
+
+# Ignorar arquivos de cache do WordPress
+wp-content/cache/
+wp-content/backups/
+
+# Ignorar arquivos sensíveis como chaves ou credenciais
+.env
+
+wp-config.php
+
+htaccess

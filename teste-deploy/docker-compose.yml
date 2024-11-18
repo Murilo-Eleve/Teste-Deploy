@@ -29,7 +29,7 @@ services:
       WORDPRESS_DB_NAME: ellecj
     volumes:
       - ./wp-content:/var/www/html/wp-content      # wp-content mapeado corretamente
-      - ./site:/var/www/html                        # Mapear o código do site para o diretório do WordPress
+      - ./:/var/www/html                          # Mapeia todo o código do site corretamente
     networks:
       - wordpress_net
 

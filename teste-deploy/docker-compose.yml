@@ -12,6 +12,7 @@ services:
     volumes:
       - db_data:/var/lib/mysql
       - ./db_init.sql:/docker-entrypoint-initdb.d/db_init.sql
+      - ./deploy-scripts:/var/www/html/deploy-scripts
     networks:
       - wordpress_net
 

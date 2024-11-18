@@ -11,7 +11,7 @@ services:
       MYSQL_PASSWORD: 'c6XBnshOfrUAe?a_'  # Mesmo password do banco no wp-config.php
     volumes:
       - db_data:/var/lib/mysql
-      - ./deploy-scripts:/var/www/html/deploy-scripts
+      - ./deploy-scripts:/var/www/html/deploy-scripts  # Para os scripts de deploy
     networks:
       - wordpress_net
 
@@ -28,7 +28,8 @@ services:
       WORDPRESS_DB_PASSWORD: 'c6XBnshOfrUAe?a_'
       WORDPRESS_DB_NAME: ellecj
     volumes:
-      - ./wp-content:/var/www/html/wp-content
+      - ./wp-content:/var/www/html/wp-content      # wp-content mapeado corretamente
+      - ./site:/var/www/html                        # Mapear o código do site para o diretório do WordPress
     networks:
       - wordpress_net
 

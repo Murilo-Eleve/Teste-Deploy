@@ -30,7 +30,7 @@ services:
       WORDPRESS_DB_NAME: ellecj
     volumes:
       - ./wp-content:/var/www/html/wp-content
-       - .:/var/www/html
+      - .:/var/www/html  # Corrigido aqui, removendo o espaço extra
     networks:
       - wordpress_net
 
